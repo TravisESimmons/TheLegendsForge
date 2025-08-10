@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Inter:wght@400;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fantasy-header: 'UnifrakturCook', cursive;
+  --main-font: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --parchment: #f8f5e3;
+  --panel: #fffbe6;
+  --panel-border: #bfa76f;
+  --accent: #7c5e2a;
+  --shadow: 0 4px 16px rgba(124, 94, 42, 0.08);
+  font-family: var(--main-font);
   line-height: 1.5;
   font-weight: 400;
-  color: #213547;
-  background-color: #ffffff;
+  color: #2d2212;
+  background-color: var(--parchment);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,12 +24,46 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background: var(--parchment);
 }
+
 
 #root {
   min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--fantasy-header);
+  color: var(--accent);
+  margin-bottom: 0.2em;
+}
+
+h4, h5, h6 {
+  font-family: var(--main-font);
+  color: var(--accent);
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.character-sheet-panel {
+  background: var(--panel);
+  border: 2px solid var(--panel-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.5em 1.5em 1em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.character-sheet-container {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em;
+  background: rgba(255,255,255,0.7);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(124, 94, 42, 0.12);
 }
