@@ -10,22 +10,6 @@ import FeaturesTraitsPanel from './FeaturesTraitsPanel';
 import PersonalityPanel from './PersonalityPanel';
 import Avatar from './Avatar';
 
-const CharacterSheet = () => {
-  return (
-    <div>
-      <h2>Character Sheet</h2>
-      <CharacterInfo />
-      <AbilityScores />
-      <ProficiencyPanel />
-      <SkillsPanel />
-      <CombatStats />
-      <AttacksAndSpells />
-      <EquipmentPanel />
-      <FeaturesTraitsPanel />
-      <PersonalityPanel />
-      <Avatar />
-    </div>
-  );
-};
+const CharacterSheet = () => null;
 
 export default CharacterSheet;
