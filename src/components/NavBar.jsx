@@ -19,8 +19,8 @@ const NavBar = () => {
       zIndex: 10
     }}>
       <Link to="/" style={navBtnStyle}>Home</Link>
-      {path !== '/signin' && <Link to="/signin" style={navBtnStyle}>Sign In</Link>}
-      {path !== '/signup' && <Link to="/signup" style={navBtnStyle}>Sign Up</Link>}
+      {path !== '/dashboard' && path !== '/signin' && <Link to="/signin" style={navBtnStyle}>Sign In</Link>}
+      {path !== '/dashboard' && path !== '/signup' && <Link to="/signup" style={navBtnStyle}>Sign Up</Link>}
       {path === '/dashboard' && <Link to="/" style={navBtnStyle}>Log Out</Link>}
     </nav>
   );
