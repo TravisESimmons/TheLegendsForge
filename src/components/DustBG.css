@@ -1,0 +1,34 @@
+.dust-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dust-particle {
+  position: absolute;
+  background: radial-gradient(circle, #bfa76f 60%, transparent 100%);
+  border-radius: 50%;
+  filter: blur(1.2px);
+  animation-name: ash-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ash-fall {
+  0% {
+    transform: translateY(0) scale(1) translateX(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(110vh) scale(1.1) translateX(-10vw);
+    opacity: 0;
+  }
+}
